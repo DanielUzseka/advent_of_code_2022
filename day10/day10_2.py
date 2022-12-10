@@ -21,6 +21,9 @@ for i in range(1,240):
         render += "#"
     else:
         render += "."
+        
+    if(i%40 == 0):
+        render += "\n"
     
     if(program[0] == "noop"):
         progCnt += 1
